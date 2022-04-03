@@ -3,14 +3,14 @@
 #include "VHSCPool.h"
 
 int main(){
-    cout << "Creating Pool With Objects.\n";
+    cout << "Creating Pool With Slow Creation Objects.\n";
     VHSCPool *pool = VHSCPool::Instance();
 
     std::cout << "Current Pool Size: " << pool->getCurrentSize();
     std::cout << "\n";
     std::cout << "Max Pool Size: " << pool->getMaxPoolSize();
     std::cout << "\n";
-    std::cout << "Increasing size for pool." << endl;
+    std::cout << "Increasing max pool size:" << endl;
     pool->setMaxPoolSize(20);
     std::cout << "New Max Pool Size: " << pool->getMaxPoolSize();
     std::cout << "\n";

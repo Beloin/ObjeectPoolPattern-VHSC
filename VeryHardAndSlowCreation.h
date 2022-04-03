@@ -11,7 +11,7 @@ private:
     int id;
 public:
     VeryHardAndSlowCreation(int id){
-        for (double i = 0; i < 10000000.0; i=i+0.1) {
+        for (double i = 0; i < 100000000.0; i=i+0.5) {
             123+123;
         }
         this->id = id;
